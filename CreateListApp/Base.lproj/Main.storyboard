@@ -94,7 +94,6 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="TN2-Nf-jcM"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="Qdg-fj-0Bj" kind="show" identifier="toAdd" id="G4H-Dc-6cw"/>
@@ -113,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KqC-oW-0P3">
-                                <rect key="frame" x="16" y="110" width="343" height="50"/>
+                                <rect key="frame" x="16" y="154" width="343" height="50"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ACA-Hn-gHr"/>
@@ -123,7 +122,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwN-hd-XW0">
-                                <rect key="frame" x="135" y="319" width="105" height="60"/>
+                                <rect key="frame" x="135" y="363" width="105" height="60"/>
                                 <color key="backgroundColor" red="0.40267348289489746" green="0.82803153991699219" blue="0.90506976842880249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="追加">
@@ -172,7 +171,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="G4H-Dc-6cw"/>
-        <segue reference="hje-H6-09q"/>
+        <segue reference="Jpw-fc-axW"/>
     </inferredMetricsTieBreakers>
 </document>

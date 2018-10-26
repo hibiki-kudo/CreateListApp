@@ -27,8 +27,6 @@ class ViewController: UIViewController {
             appDelegate.Text = InputList.text
         }
         
-        TableViewController2().loadView()
-        TableViewController2().viewDidLoad()
         navigationController?.popViewController(animated: true)
         
     }

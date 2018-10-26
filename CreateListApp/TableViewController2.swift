@@ -21,11 +21,14 @@ class TableViewController2: UITableViewController {
         if appDelegate.Text != nil{
             sendText = appDelegate.Text!.components(separatedBy:",,,")
             appDelegate.Text = sendText!.joined(separator: ",,,")
-            sendText!.removeLast()
+            if sendText!.last == ""{
+            sendText?.removeLast()
+            }
             print(appDelegate.Text!)
             print(sendText!)
         }else{
-            self.performSegue(withIdentifier: "toAdd", sender: nil)        }
+            self.performSegue(withIdentifier: "toAdd", sender: nil)
+        }
         
 
         self.title = "リスト"
@@ -92,6 +95,7 @@ class TableViewController2: UITableViewController {
             if editingStyle == .delete {
                 sendText!.remove(at: indexPath.row)
                 tableView.deleteRows(at: [indexPath], with: .fade)
+                print(appDelegate.Text)
                 appDelegate.Text = sendText!.joined(separator: ",,,")
 
         } else if editingStyle == .insert {
