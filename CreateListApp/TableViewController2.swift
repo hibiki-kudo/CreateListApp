@@ -38,6 +38,12 @@ class TableViewController2: UITableViewController {
         self.navigationItem.rightBarButtonItems = [rightbtn,reloadbtn]
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadView()
+        viewDidLoad()
+    }
+    
     @objc func reloadtouch(_ sender: Any){
         loadView()
         viewDidLoad()

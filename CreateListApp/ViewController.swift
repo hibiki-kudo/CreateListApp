@@ -20,11 +20,13 @@ class ViewController: UIViewController {
     
 
     @IBAction func InsertList(_ sender: Any) {
-        if appDelegate.Text != nil{
+        if appDelegate.Text != nil && InputList.text != ""{
             appDelegate.Text = InputList.text + ",,," + appDelegate.Text!
-        }else{
+            
+        }else if appDelegate.Text == nil && InputList.text != ""{
             appDelegate.Text = InputList.text
         }
+        
         TableViewController2().loadView()
         TableViewController2().viewDidLoad()
         navigationController?.popViewController(animated: true)

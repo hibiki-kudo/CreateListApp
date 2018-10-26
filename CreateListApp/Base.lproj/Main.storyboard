@@ -172,6 +172,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="G4H-Dc-6cw"/>
         <segue reference="hje-H6-09q"/>
     </inferredMetricsTieBreakers>
 </document>
